@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Learning Tutorials Admission Form</title>
+</head>
+<body>
+  <br><h1><center><img src="images/logo.png" alt="logo.png" height="50"> Learning Tutorials</center></h1><br>
+  <h5>Learning today...leading tomorrow</h5>
+  <h4><u><center>Admission form</center></u></h4><br>
+  <div class="mainDiv inline-block">
+    <form class="gform" method="post" data-email="sarveshkardekar@gmail.com" action="https://script.google.com/macros/s/AKfycbzbA59iVizQKRNAa8BE1Xd-kWwAPOzRf_X2OS-H/exec">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputFirstName">First Name</label>
+          <input name="firstName" type="text" class="form-control fName" id="inputFirstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputMiddleName">Middle Name</label>
+          <input name="middleName" type="text" class="form-control" id="inputMiddleName" placeholder="Middle Name" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputLastName">Last Name</label>
+          <input name="lastName" type="text" class="form-control" id="inputLastName" placeholder="Last Name" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Gender</label>
+          <select name="gender" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" required>
+            <option value="" selected>Choose...</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputParentsNumber">Parent's/Guardian's Phone No.</label>
+          <input name="parentsNumber" type="tel" class="form-control" id="inputParentsNumber" placeholder="Enter 10 digit mobile number" pattern="[0-5]{5}[5-10]{5}" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputStudentNumber">Student's Phone No.</label>
+          <input name="studentsNumber" type="tel" class="form-control" id="inputStudentNumber" placeholder="Enter 10 digit mobile number" pattern="[0-5]{5}[5-10]{5}" required>
+        </div>
+      </div>
+      <div class="md-form md-outline input-with-post-icon datepicker">
+        <label for="dob">Date of birth</label>
+        <input name="dateOfBirth" placeholder="Select date" type="date" id="dob" class="form-control" required>
+      </div>
+      <br>
+      <label for="inputEmail">Student's email</label>
+      <input name="studentsEmail" type="email" class="form-control" id="inputEmail" placeholder="something@example.com" required>
+      <br>
+      <label for="inputSchoolName">School Name</label>
+      <input name="schoolName" type="text" class="form-control" id="inputSchoolName" placeholder="School Name" required>
+      <br>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Residential address</label>
+        <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Type your address here..." required></textarea>
+      </div>
+      <br>
+      <label for="subjects">Subject list</label>
+      <ul class="list-group list-group-flush" id="subjects">
+        <li class="list-group-item">
+          <div class="custom-control custom-checkbox">
+            <input type="hidden" name="english" value="no">
+            <input name=english type="checkbox" class="custom-control-input" id="subject1" value="yes">
+            <label class="custom-control-label" for="subject1">English</label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="custom-control custom-checkbox">
+            <input type="hidden" name="hindi" value="no">
+            <input name="hindi" type="checkbox" class="custom-control-input" id="subject2" value="yes">
+            <label class="custom-control-label" for="subject2">Hindi</label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="custom-control custom-checkbox">
+            <input type="hidden" name="marathi" value="no">
+            <input name="marathi" type="checkbox" class="custom-control-input" id="subject3" value="yes">
+            <label class="custom-control-label" for="subject3">Marathi</label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="custom-control custom-checkbox">
+            <input type="hidden" name="maths" value="no">
+            <input name="maths" type="checkbox" class="custom-control-input" id="subject4" value="yes">
+            <label class="custom-control-label" for="subject4">Maths</label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="custom-control custom-checkbox">
+            <input type="hidden" name="science" value="no">
+            <input name="science" type="checkbox" class="custom-control-input" id="subject5" value="yes">
+            <label class="custom-control-label" for="subject5">Science</label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="custom-control custom-checkbox">
+            <input type="hidden" name="socialStudies" value="no">
+            <input name="socialStudies" type="checkbox" class="custom-control-input" id="subject6" value="yes">
+            <label class="custom-control-label" for="subject6">Social studies</label>
+          </div>
+        </li>
+      </ul>
+      <br>
+      <div class="formDiv center">
+        <button style="margin:auto" class="btn btn-lg btn-danger" onclick="modifyPdf()" type="submit">Submit</button>
+      </div>
+      <div style="display:none" class="postSubmit center">
+        <h2>Thank you, your response has been sucessfully submitted, please download the admission form PDF from the button below.</h2>
+        <a class="btn btn-lg btn-danger" href="https://index.sarveshrulz.workers.dev/0:/form.pdf">Download PDF</a>
+      </div>
+    </form>
+  </div>
+  <div class="footer">
+    <p>Site created by <a href="mailto:sarveshkardekar@gmail.com">Sarvesh Kardekar</a></p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="js/form-submission.js" charset="utf-8"></script>
+</body>
+</html>
